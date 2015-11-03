@@ -64,7 +64,9 @@ public class BorderLayoutFrame extends JFrame implements ActionListener{
 
 	button.setVisible(true);
 	JOptionPane.showMessageDialog(null, "You decided to go upstairs!");
-	BorderLayoutFrame.LabelFrame(); // attempt to call LabelFrame
+	LabelFrame pic = new LabelFrame();
+	pic.getGraphics1();
+	// attempt to call LabelFrame
 	break;
 	}
 
@@ -73,7 +75,9 @@ public class BorderLayoutFrame extends JFrame implements ActionListener{
 	{
 
 		button.setVisible(true);
-		JOptionPane.showMessageDialog(null, "Yo decided to go right!");
+		JOptionPane.showMessageDialog(null, "You decided to go right!");
+		LabelFrame pic = new LabelFrame();
+		pic.getGraphics2();
 		break;
 	}
 
@@ -87,15 +91,4 @@ public class BorderLayoutFrame extends JFrame implements ActionListener{
 	 
 	 
 	}}
-}
-
-	private static void LabelFrame() {
-		// TODO Auto-generated method stub
-		{
-			LabelFrame pic = new LabelFrame();						// show the image
-			pic.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			pic.setSize(600, 450);
-			pic.setVisible(true);	
-	}
-	} }
-
+}} 
